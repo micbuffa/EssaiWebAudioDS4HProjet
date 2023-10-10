@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>First WebAudio app</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Premier essai WebAudio</h1>
+    Choisir fichier : <input type="file" id="fileSelect" accept="audio/*">
+    <button id="playAudioButton">Play audio file</button>
+    <p></p>
+    <button id="start">Start</button>
+    <button id="stop" disabled>Stop</button>
+    <br>
+    Frequence : <input type="range" min="20" max="20000" value="440" id="freqSlider"> 
+    <span id="freqValue">440</span> Hz
+    <br>
+    Balance G/D : <input type="range" min="-1" max="1" value="0" 
+                         step="0.01" id="balanceSlider">
+    <br>
+    Filtre passe bas : <input type="range" min="20" max="1000" value="1000" 
+    id="freqLPFilterSlider"> 
+    <span id="freqValueLP">1000</span> Hz
+</body>
+</html>
